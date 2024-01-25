@@ -1,5 +1,6 @@
 {
   "new-app": {
-    "component": "NewApp"
+    "component": "NewApp",
+    "composition": "children"
   }
 }

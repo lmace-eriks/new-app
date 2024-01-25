@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { ReactChildren, useEffect } from 'react'
+import { Link, canUseDOM } from "vtex.render-runtime";
 
 import styles from './styles.css'
 
 type NewAppProps = {
+  name: string
   blockClass: string
+  children: ReactChildren | any
 }
 
-function NewApp(props: NewAppProps) {
+const NewApp = ({ name, blockClass, children }: NewAppProps) => {
+
+  useEffect(() => {
+    if (canUseDOM) {
+      console.info("Using DOM");
+    }
+  })
+
   return (
-    <section className={`${styles.container}--${props.blockClass}`}>
-      Hello, World!
+    <section className={`${styles.container}--${blockClass} ${styles.container}`} >
+      <Link href="#">Hello, {name}</Link>
+      {children}
     </section>
   )
 }
