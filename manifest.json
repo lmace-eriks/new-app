@@ -1,0 +1,17 @@
+{
+  "vendor": "eriksbikeshop",
+  "name": "new-app",
+  "version": "1.0.0",
+  "title": "new-app",
+  "description": "new-app component",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.css-handles": "0.x"
+  },
+  "registries": ["smartcheckout"],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
