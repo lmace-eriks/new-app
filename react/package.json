@@ -1,5 +1,5 @@
 {
-  "name": "new-component",
+  "name": "new-app",
   "version": "0.0.0",
   "scripts": {
     "test": "vtex-test-tools test"
