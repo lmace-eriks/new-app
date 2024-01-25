@@ -25,4 +25,19 @@ const NewApp = ({ name, blockClass, children }: NewAppProps) => {
   )
 }
 
+
+NewApp.schema = {
+  title: "NewApp",
+  description: "",
+  type: "object",
+  properties: {
+    name: {
+      title: "Name",
+      description: "",
+      type: "string",
+      widget: { "ui:widget": "textarea" }
+    }
+  }
+};
+
 export default NewApp
