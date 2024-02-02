@@ -2395,6 +2395,10 @@ end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
+"eriksbikeshop.new-app@https://ebs24--eriksbikeshop.myvtex.com/_v/private/typings/linked/v1/eriksbikeshop.new-app@1.0.0+build1706726597/public/@types/eriksbikeshop.new-app":
+  version "1.0.0"
+  resolved "https://ebs24--eriksbikeshop.myvtex.com/_v/private/typings/linked/v1/eriksbikeshop.new-app@1.0.0+build1706726597/public/@types/eriksbikeshop.new-app#0459f66f0d9eda331385ff59129b187656004739"
+
 error-ex@^1.3.1:
   version "1.3.2"
   resolved "https://registry.npmjs.org/error-ex/-/error-ex-1.3.2.tgz"
@@ -5215,10 +5219,13 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.120.0/public/@types/vtex.render-runtime":
-  version "8.120.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.120.0/public/@types/vtex.render-runtime"
-  integrity sha512-Gxhpkder1pr60iIAAuT8bp0ct3Q+neRGuJv5hs8SRoIdUKr4K7XmTeArTDHzRkLhkiicg005/7C66kVi5wUKdw==
+"vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles":
+  version "0.4.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles#8c45c6decf9acd2b944e07261686decff93d6422"
+
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.2/public/@types/vtex.render-runtime":
+  version "8.134.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.2/public/@types/vtex.render-runtime#ae69e2b2a471291c6c6b155e17510150fbfc2d0e"
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"

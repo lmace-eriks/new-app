@@ -9,7 +9,8 @@
     "react": "3.x"
   },
   "dependencies": {
-    "vtex.css-handles": "0.x"
+    "vtex.css-handles": "0.x",
+    "vtex.render-runtime": "8.x"
   },
   "registries": [
     "smartcheckout"

@@ -1,7 +1,7 @@
-import React, { ReactChildren, useEffect } from 'react'
-import { Link, canUseDOM } from "vtex.render-runtime";
+import React, { ReactChildren, useEffect } from "react";
+import { Link, canUseDOM, useRuntime } from "vtex.render-runtime";
 
-import styles from './styles.css'
+import { default as s } from "./styles.css";
 
 type NewAppProps = {
   name: string
@@ -10,16 +10,20 @@ type NewAppProps = {
 }
 
 const NewApp = ({ name, blockClass, children }: NewAppProps) => {
+  const runtime = useRuntime();
 
   useEffect(() => {
     if (canUseDOM) {
       console.info("Using DOM");
     }
-  })
+    console.info(runtime);
+  });
+
+  const bc = (className: string, modifier: string = blockClass) => `${className} ${className}--${modifier}`;
 
   return (
-    <section className={`${styles.container}--${blockClass} ${styles.container}`} >
-      <Link href="#">Hello, {name}</Link>
+    <section className={bc(s.container)} >
+      <Link href="#">Hello, {name || "World"}!</Link>
       {children}
     </section>
   )
@@ -41,3 +45,5 @@ NewApp.schema = {
 };
 
 export default NewApp
+
+
